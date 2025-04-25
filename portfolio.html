@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Veer Patel Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <script defer src="script.js"></script> <!-- Link to JavaScript file -->
+</head>
+<body>
+    <div class="container">
+        <!-- Header Section -->
+        <header>
+            <h1 id="greeting"></h1>
+            <nav>
+                <ul>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#university">Education</a></li>
+                    <li><a href="#skills">Skills</a></li>
+                    <li><a href="#resume">Resume</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <!-- Main Content -->
+        <main>
+            <!-- About Section -->
+            <section id="about">
+                <h2>About Me</h2>
+                <img src="port.jpg" alt="Profile Picture of Veer Patel" class="profile-pic">
+                <p>
+                    Hello! My name is Veer Patel. I am a Computer Science student passionate about software development. 
+                    I also like Business, Finance, and Data Analytics. I am also working towards obtaining my AI Certificate. I enjoy working on projects that challenge me to learn new technologies.
+                    <blockquote id="random-quote" class="cool-quote"></blockquote>
+                </p>
+            </section>
+
+            <section id="university">
+                <h2>Education</h2>
+                <div class="university-details">
+                    <img src="WKU.webp" alt="University Logo" class="university-logo">
+                    <div class="university-info">
+                        <h3>Western Kentucky University</h3>
+                        <p><a href="https://www.wku.edu" target="_blank">Visit University Website</a></p>
+                        <p><strong>Degree:</strong> Bachelor of Science in Computer Science (In Progress)</p>
+                        <p><strong>Graduation Year:</strong> 2026</p>
+                        <p><strong>Major:</strong> Computer Science</p>
+                        <p><strong>Minor:</strong> Business Adminstration and Finance</p>
+                        <p><strong>Certificate:</strong> Applied Data Analytics and Artificial Intelligence</p>
+                    </div>
+                </div>
+            </section>
+
+            
+
+            <!-- Skills Section -->
+            <section id="skills">
+                <h2>Technical Skills</h2>
+                <ul class="skills-list">
+                    <li data-description="Experienced in building responsive websites using HTML and CSS.">HTML & CSS</li>
+                    <li data-description="Proficient in object-oriented programming with C++.">C++</li>
+                    <li data-description="Skilled in developing desktop applications using C# and .NET.">C#</li>
+                    <li data-description="Experienced in creating dynamic web applications with JavaScript.">JavaScript</li>
+                    <li data-description="Proficient in data analysis and scripting with Python.">Python</li>
+                    <li data-description="Experienced in building backend systems using Java.">Java</li>
+                    <li data-description="Skilled in database management and queries using MySQL.">MySQL</li>
+                    <li data-description="Proficient in analyzing and visualizing data for insights.">Data Analysis</li>
+                    <li data-description="Experienced in version control and collaboration using Git and GitHub.">Git & GitHub</li>
+                </ul>
+                <p id="skill-description" style="margin-top: 20px; font-style: italic; color: #555;">Click on a skill to see its description.</p>
+            </section>
+
+            <!-- Resume Section -->
+            <section id="resume">
+                <h2>Resume</h2>
+                <p>Download my resume to learn more about my experience and skills:</p>
+                <a href="ResumeVPatel.pdf" target="_blank" class="resume-download">Download Resume (PDF)</a>
+                <div class="resume-preview">
+                <iframe src="ResumeVPatel.pdf" title="Resume Preview" frameborder="0"></iframe>
+                </div>
+            </section>
+
+            <!-- Projects Section -->
+            <section id="projects">
+                <h2>My Projects</h2>
+                <div class="project">
+                    <img src="WhiteBoard.jpg" alt="Whiteboard Collaboration Project" class="project-thumbnail">
+                    <img src="WhiteBoard2.jpg" alt="Whiteboard Collaboration Project" class="project-thumbnail">
+                    <img src="WhiteBoard3.jpg" alt="Whiteboard Collaboration Project" class="project-thumbnail">
+                    <h3>Whiteboard Collaboration Project</h3>
+                    <p>▪ Analyzing ASP.NET to make a scalable and functional web applications for a host to either invite a client or join through locally to collab on a shared canvas.</p>
+                    <p>▪ Interpreting Signal R for communication between the server and client-side wed applications.</p>
+                    <p>▪ Build a MS SQL Server for user management and authentication. In progress of working on a chat box!</p>
+                    <p>▪ Worked with fellow classmate for our Networking project</p>
+                    <a href="https://github.com/Thomas-Donnell/whiteboard/tree/VP/Personal" target="_blank">View on GitHub</a>
+                </div>
+                <div class="project">
+                    <img src="Maze Game.jpg" alt="2D Maze Game" class="project-thumbnail">
+                    <img src="Maze Game2.jpg" alt="2D Maze Game" class="project-thumbnail">
+                    <h3>2D Maze Game</h3>
+                    <p>▪ Created a maze by implementing a plane and using 2D objects in Unity.</p>
+                    <p>▪ Utilizing C# to move the cube X and Y direction, have a timer, and make it where it tells the player if they have lost or won the
+                        game or have moved on to the next round.</p>
+                </div>
+            </section>
+
+            
+
+            <!-- Contact Section -->
+            <section id="contact">
+                <h2>Contact</h2>
+                <p>Email: <a href="mailto:veerpatel2954@gmail.com">veerpatel2954@gmail.com</a></p>
+                <p>LinkedIn: <a href="https://www.linkedin.com/in/veer-patel-1ba758258/" target="_blank">linkedin.com</a></p>
+                <p>GitHub: <a href="https://github.com/VDP29?tab=repositories" target="_blank">github.com</a></p>
+                <p>Phone: <a href="tel:+1-732-397-9882">+1-732-397-9882</a></p>
+
+                
+            </section>
+        </main>
+
+        <div id="scroll-progress"></div>
+
+        <div id="project-modal" class="modal">
+            <div class="modal-content">
+                <span class="close-modal">&times;</span>
+                <h3 id="modal-title"></h3>
+                <p id="modal-description"></p>
+            </div>
+        </div>
+
+        <div id="clock"></div>
+
+        <canvas id="background-animation"></canvas>
+
+        
+
+        <!-- Footer Section -->
+        <footer>
+            <p>&copy; 2025 Veer Patel Portfolio</p>
+        </footer>
+
+        <button id="dark-mode-toggle">Toggle Dark Mode</button>
+    </div>
+</body>
+</html>
